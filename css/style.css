@@ -41,8 +41,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  /*это хуйня полная*/
 }
 .navigation {
   display: flex;
@@ -57,6 +55,12 @@ img {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+.section-clients {
+  padding-left: 215px;
+  padding-right: 215px;
+  width: 1170px;
+  height: 184px;
 }
 
 /*
@@ -75,10 +79,15 @@ img {
 }
 .people-box {
   padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: #ffffff;
 }
 .header {
-  padding-top: 25px;
-  padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
 }
 .menu-list {
@@ -105,12 +114,15 @@ body {
   text-align: center;
   font-family: 'Roboto';
   color: #ffffff;
-  bottom: 200px;
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: 4px;
   margin-top: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 .logo-spn {
   color: #2196f3;
@@ -188,7 +200,6 @@ body {
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 50px;
-  padding-top: 94px;
   text-align: center;
 }
 .our-team-title {
@@ -206,6 +217,9 @@ body {
 .about-img-list {
   display: flex;
 }
+.about-img {
+  padding-bottom: 94px;
+}
 
 .about-img-item:not(:last-child) {
   margin-right: 30px;
@@ -219,13 +233,14 @@ body {
   line-height: 1.18;
   letter-spacing: 0.03em;
   color: #757575;
+  margin-bottom: 16px;
 }
 .menu-address-link {
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .menu-address-link-contacts {
@@ -244,6 +259,96 @@ body {
   margin-top: 20px;
   font-style: normal;
 }
+.social-list-icon-footer {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-list-icon {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-header {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+.social-list-link-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+.social-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+.social-list {
+  display: flex;
+  justify-content: space-between;
+}
+.social-list-link-footer:hover,
+.social-list-link-footer:focus {
+  background-color: var(--accent-color);
+}
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: transparent;
+  border-radius: 50%;
+}
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--accent-color);
+}
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+  fill: #ffffff;
+}
+.img-item {
+  width: 170px;
+  height: 92px;
+}
+
+.img-item:not(:last-child) {
+  margin-right: 30px;
+}
+.clients-list {
+  display: flex;
+}
+.link-clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  color: #afb1b8;
+}
+.clients-icon {
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
+}
+.link-clients:hover,
+.link-clients:focus {
+  border: 1px solid var(--accent-color);
+
+  color: var(--accent-color);
+}
+
 /* ============= END COMPONENTS ============ */
 
 /* ================ HEADER ============== */
@@ -285,6 +390,9 @@ body {
   line-height: 1.1;
   letter-spacing: 0.02em;
   color: #757575;
+  padding: 32px 0;
+  display: flex;
+  align-items: center;
 }
 .mail-link:hover,
 .mail-link:focus {
@@ -296,8 +404,7 @@ body {
   line-height: 1.1;
   letter-spacing: 0.02em;
   color: #757575;
-
-  color: #757575;
+  padding: 32px 0;
 }
 .tel-link:hover,
 .tel-link:focus {
@@ -318,16 +425,12 @@ body {
   background-repeat: no-repeat;
   background-position: left top;
   background-size: cover;
-  max-width: 1600px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .about-main-list {
   display: flex;
-}
-
-.hero {
-  text-align: center;
 }
 
 /* =========== END HERO =========== */
@@ -347,11 +450,54 @@ body {
 .about-main-list-item:not(:last-child) {
   margin-right: 30px;
 }
+.antenna::before {
+  content: '';
+  display: block;
+  margin-bottom: 30px;
+  height: 120px;
+  background-color: #f5f4fa;
+  background-image: url(../images/antena.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.clock::before {
+  content: '';
+  display: block;
+  margin-bottom: 30px;
+  height: 120px;
+  background-color: #f5f4fa;
+  background-image: url(../images/clock.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.diagrama::before {
+  content: '';
+  display: block;
+  margin-bottom: 30px;
+  height: 120px;
+  background-color: #f5f4fa;
+  background-image: url(../images/diagrama.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.astronaft::before {
+  content: '';
+  display: block;
+  margin-bottom: 30px;
+  height: 120px;
+  background-color: #f5f4fa;
+  background-image: url(../images/astronaft.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 /* =========== PORTFOLIO =========== */
 .filters-item-link:hover,
 .menu-address-link:focus {
   color: #2196f3;
+}
+.address {
+  color: #ffffff;
 }
 .filters {
   display: flex;
@@ -388,7 +534,12 @@ body {
   margin-top: 30px;
 }
 .people-card {
-  padding-top: 20px;
+  cursor: pointer;
+}
+.people-card:focus,
+.people-card:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .menu-address-list-item:not(:last-child) {
   margin-bottom: 9px;
@@ -399,7 +550,46 @@ body {
 
 .footer {
   background-color: #2f303a;
-  padding: 60px 15px;
+  padding: 60px;
   display: block;
   margin: 0 auto;
+}
+.footer-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #ffffff;
+  display: inline-block;
+}
+
+.footer-left {
+  margin-right: 70px;
+}
+
+.footer-right {
+  align-items: center;
+  margin-top: 12px;
+}
+
+.footer-list {
+  display: flex;
+}
+
+.footer-container {
+  display: flex;
+}
+/* ==== sprite ====  */
+.asdasdasd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ffffff;
 }
