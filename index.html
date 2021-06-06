@@ -23,7 +23,7 @@
             <a class="logo-link link" href="./index.html"><span class="logo-spn">Web</span>Studio</a>
             <ul class="menu-list">
                <li class="menu-item list">
-                  <a class="menu-link link" href="">Студия</a>
+                  <a class="menu-link link current" href="">Студия</a>
                </li>
                <li class="menu-item list">
                   <a class="menu-link link" href="./portfolio.html">Портфолио</a>
@@ -58,7 +58,7 @@
          <section class="hero">
             <div class="hero-main container">
                <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-               <button class="modal-btn" type="button">Заказать услугу</button> 
+               <button class="modal-btn" type="button" data-modal-open>Заказать услугу</button> 
             </div>
          </section>
          <section class="about-main section">
@@ -103,12 +103,21 @@
          <ul class="about-img-list list">
             <li class="about-img-item">
                <img class="about-img-list-img" src="./images/about/about-img-3.jpg" alt="набирает текст на клавиатуре" width="370" height="294">
+               <div class="label-box">
+               <p class="label-text">Десктопные приложения</p>
+               </div>
             </li>
             <li class="about-img-item">
                <img class="about-img-list-img" src="./images/about/about-img-1.jpg" alt="смотрит в телефон и в ноутбук" width="370" height="294">
+               <div class="label-box">
+                  <p class="label-text">Мобильные приложения</p>
+               </div>
             </li>
             <li class="about-img-item">
                <img class="about-img-list-img" src="./images/about/about-img-2.jpg" alt="рисует на планшете" width="370" height="294">
+               <div class="label-box">
+                  <p class="label-text">Дизайнерские решения</p>
+               </div>
             </li>
          </ul>
          </div>
@@ -390,6 +399,32 @@
       </div>
    </div>
       </footer>
+      <div class="backdrop is-hidden" data-modal>
+         <div class="modal">
+            <button  type="button" class="modal-close-btn" data-modal-close>
+               <svg class="modal-close-btn-svg">
+                  <use href="./images/sprite.svg#icon-close"></use>
+               </svg>
+            </button>
+            <form action="#" class="modal-form">
+               <p class="modal-form-head"></p>
+               <label class="modal-form-field">
+                  Имя
+                  <input type="text" class="modal-form-input">
+               </label>
+               <label class="modal-form-field">
+                  Телефон
+                  <input type="tel" class="modal-form-input">
+               </label>
+               <label class="modal-form-field">
+                  Почта
+                  <input type="mail" class="modal-form-input">
+               </label>
+
+            </form>
+         </div>
+      </div>
+      <script src="./js/modal.js"></script>
 
    </body>
 </html>
