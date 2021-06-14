@@ -397,7 +397,21 @@
             
          </ul>
       </div>
-   </div>
+   
+      <div class="footer-right-form">
+      <form action="#" class="footer-form">
+         <p class="footer-text-form">Подпишитесь на рассылку</p>
+            <input type="mail" name="user-mail" class="footer-form-input" placeholder="E-mail">
+               <button type="button" class="send-btn">Подписаться
+                  <svg class="icon-footer">
+                     <use href="./images/sprite.svg#icon-icon-send"></use>
+                  </svg>
+               </button>
+
+         </form>
+         </div>
+      </div>
+
       </footer>
       <div class="backdrop is-hidden" data-modal>
          <div class="modal">
@@ -442,7 +456,7 @@
                   </span>
                   
                </label>
-               <input type="checkbox" name="user-policy" class="modal-form-checkbox" id="checkbox-policy" required>
+               <input type="checkbox" name="user-policy" class="modal-form-checkbox visually-hidden" id="checkbox-policy" required>
                <label for="checkbox-policy" class="modal-form-checkbox-policy">Соглашаюсь с рассылкой и принимаю <a class="modal-form-policy-link" href="">Условия договора</a></label>
                <button type="submit" class="modal-form-btn">Отправить</button>
             </form>
