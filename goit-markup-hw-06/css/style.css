@@ -690,6 +690,7 @@ body {
   height: 24px;
   width: 24px;
   fill: #ffffff;
+  margin-left: 10px;
 }
 
 .footer-form-input {
@@ -826,7 +827,12 @@ body {
   fill: var(--accent-color);
 }
 .modal-form-field {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.16;
 }
 .modal-form-message {
   width: 100%;
@@ -895,4 +901,8 @@ body {
   line-height: 1.87;
   letter-spacing: 0.06em;
   align-self: center;
+  margin-top: 30px;
+}
+.modal-footer-form {
+  display: flex;
 }
