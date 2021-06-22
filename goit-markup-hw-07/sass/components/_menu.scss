@@ -1,0 +1,46 @@
+.menu-list {
+  display: flex;
+  align-items: center;
+}
+.menu-item {
+  position: relative;
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.menu-address-link {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  &:hover,
+  &:focus {
+    color: #2196f3;
+  }
+}
+
+.menu-address-link-contacts {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.menu-address {
+  margin-top: 20px;
+  font-style: normal;
+}
+.menu-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  color: #212121;
+  &:hover,
+  &:focus {
+    color: #2196f3;
+  }
+}

@@ -1,0 +1,28 @@
+.icon-header {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+.icon-footer {
+  height: 24px;
+  width: 24px;
+  fill: #ffffff;
+  margin-left: 10px;
+}
+.modal-form-input:focus + .modal-form-icon {
+  fill: var(--accent-color);
+}
+.modal-form-input:focus + .modal-form-icon {
+  fill: var(--accent-color);
+}
+.modal-form-icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  display: block;
+  width: 18px;
+  height: 18px;
+  color: #212121;
+}

@@ -1,0 +1,25 @@
+.logo-spn {
+  color: #2196f3;
+}
+
+.logo-link {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-right: 93px;
+
+  &:hover,
+  &:focus {
+    color: #2196f3;
+  }
+}
+.logo-spn-one {
+  color: #ffffff;
+  &:hover,
+  &:focus {
+    color: #2196f3;
+  }
+}

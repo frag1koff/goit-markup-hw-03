@@ -1,0 +1,25 @@
+.description {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: #757575;
+  height: 75px;
+  width: 270px;
+}
+.about-main-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+.about-img-list {
+  display: flex;
+}
+.about-img {
+  padding-bottom: 94px;
+}
+
+.about-img-item {
+  position: relative;
+}
+
+.about-img-item:not(:last-child) {
+  margin-right: 30px;
+}
