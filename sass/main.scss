@@ -1,0 +1,35 @@
+// UTILS
+@import './utils/variables';
+@import './utils/visually-hidden';
+// BASE
+@import './base/common';
+@import './base/section';
+@import './base/container';
+
+// COMPONENTS
+@import './components/modal-btn';
+@import './components/logo-spn';
+@import './components/element';
+@import './components/suptitle';
+@import './components/social-list';
+@import './components/clients-list';
+@import './components/icon';
+@import './components/menu';
+@import './components/img-item';
+@import './components/navigation';
+@import './components/people-card';
+@import './components/filters-btn';
+@import './components/overlay';
+@import './components/backdrop';
+@import './components/modal-window';
+@import './components/modal-form';
+@import './components/sprite';
+@import './components/menu-contact';
+@import './components/social-list';
+
+// LAYOUT
+@import './layout/header';
+@import './layout/hero';
+@import './layout/about';
+@import './layout/hero-before';
+@import './layout/footer';

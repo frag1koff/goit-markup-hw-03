@@ -1,0 +1,12 @@
+.filters-item-link:hover,
+.menu-address-link:focus {
+  color: #2196f3;
+}
+.filters {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  .filters-item:not(:last-child) {
+    margin-right: 8px;
+  }
+}
