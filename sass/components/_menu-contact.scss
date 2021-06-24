@@ -1,3 +1,5 @@
-.menu-contact-item:not(:last-child) {
-  margin-right: 50px;
+.menu-contact__item {
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
 }

@@ -1,40 +1,48 @@
-.antenna::before {
-  content: '';
-  display: block;
-  margin-bottom: 30px;
-  height: 120px;
-  background-color: #f5f4fa;
-  background-image: url(../images/antena.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+.antenna {
+  &::before {
+    content: '';
+    display: block;
+    margin-bottom: 30px;
+    height: 120px;
+    background-color: #f5f4fa;
+    background-image: url(../images/antena.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
-.clock::before {
-  content: '';
-  display: block;
-  margin-bottom: 30px;
-  height: 120px;
-  background-color: #f5f4fa;
-  background-image: url(../images/clock.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+.clock {
+  &::before {
+    content: '';
+    display: block;
+    margin-bottom: 30px;
+    height: 120px;
+    background-color: #f5f4fa;
+    background-image: url(../images/clock.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
-.diagrama::before {
-  content: '';
-  display: block;
-  margin-bottom: 30px;
-  height: 120px;
-  background-color: #f5f4fa;
-  background-image: url(../images/diagrama.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+.diagrama {
+  &::before {
+    content: '';
+    display: block;
+    margin-bottom: 30px;
+    height: 120px;
+    background-color: #f5f4fa;
+    background-image: url(../images/diagrama.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
-.astronaft::before {
-  content: '';
-  display: block;
-  margin-bottom: 30px;
-  height: 120px;
-  background-color: #f5f4fa;
-  background-image: url(../images/astronaft.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+.astronaft {
+  &::before {
+    content: '';
+    display: block;
+    margin-bottom: 30px;
+    height: 120px;
+    background-color: #f5f4fa;
+    background-image: url(../images/astronaft.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
